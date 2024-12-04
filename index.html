@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Snake Game</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="gui">
+            <div id="score-panel">
+                <p>Best Score: <span id="best-score">0</span></p>
+                <p>Current Score: <span id="current-score">0</span></p>
+            </div>
+            <div class="game-controls">
+                <button id="play-button">Play</button>
+                <div class="gameplay-buttons">
+                    <button id="menu-button">Menu</button>
+                    <button id="exit-button">Exit</button>
+                </div>
+            </div>
+            <div class="game-modes">
+                <label><input type="radio" name="game-mode" value="classic" checked /> Classic</label>
+                <label><input type="radio" name="game-mode" value="god" /> God Mode</label>
+                <label><input type="radio" name="game-mode" value="walls" /> Walls</label>
+                <label><input type="radio" name="game-mode" value="portal" /> Portal</label>
+                <label><input type="radio" name="game-mode" value="speed" /> Speed</label>
+            </div>
+        </div>
+        <div id="game-container"></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/pixi.js@7.x/dist/pixi.min.js"></script>
+        <script src="scripts/game/modules/game.js"></script>
+        <script src="scripts/game/modules/food.js"></script>
+        <script src="scripts/game/modules/snake.js"></script>
+
+        <script src="app.js"></script>
+    </body>
+</html>

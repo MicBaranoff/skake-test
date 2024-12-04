@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+#game-container {
+    position: relative;
+}
+
+#gui {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+#score-panel {
+    display: flex;
+    gap: 20px;
+}
+
+#game-controls {
+    margin-top: 10px;
+}
+
+.game-modes {
+    display: none;
+    margin-top: 10px;
+}
+
+.game-modes label{
+    display: block;
+    margin-top: 10px;
+}
+
+.gameplay-buttons {
+    display: none;
+}
+
+#game-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
